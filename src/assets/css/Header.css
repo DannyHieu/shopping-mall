@@ -1,0 +1,7 @@
+.header-container{
+    margin-top: 0px;
+    height: 84px;
+    background: linear-gradient(#f6412d, #ff6433);
+    display: flex;
+    direction: ltr;
+}
