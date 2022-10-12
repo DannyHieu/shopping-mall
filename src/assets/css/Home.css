@@ -1,4 +1,11 @@
 .container{
     margin-top: 0px;
-    
+}
+
+#line{
+    height: 4px;
+    background: linear-gradient(#f6412d, #ff6433);
+    width: 100%;
+    margin: 30px 0px;
+    box-shadow: 3px 3px 5px rgb(173, 178, 184);
 }
