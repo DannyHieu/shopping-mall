@@ -8,10 +8,10 @@ function HomeContainer(props) {
 
                 <div id='wrapper-banner'>
                     <div id='banner-slider'>
-                    
+
                     </div>
                     <div id='banner'>
-                       
+
                     </div>
                 </div>
 
