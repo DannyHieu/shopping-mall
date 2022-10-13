@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/HomeContainer.css'
+import '../assets/css/homecontainer.css'
 
 function HomeContainer(props) {
     return (
@@ -8,11 +8,10 @@ function HomeContainer(props) {
 
                 <div id='wrapper-banner'>
                     <div id='banner-slider'>
-
+                    
                     </div>
                     <div id='banner'>
-                        <div><img alt='banner' src='https://res.cloudinary.com/sport-store/image/upload/v1665561272/shopping-app/logo-banner/banner_y2mkvv.png' /></div>
-                        <div><img alt='banner' src='https://res.cloudinary.com/sport-store/image/upload/v1665561557/shopping-app/logo-banner/banner1_w77rxv.png' /></div>
+                       
                     </div>
                 </div>
 
@@ -127,9 +126,19 @@ function HomeContainer(props) {
                     <p>DAILY DISCOVERY</p>
                     <div id='line' />
                     <div className='content-product-list'>
-                        <div >
+                        {
+                            productList.map(product =>
+                                <div className='one-item-product'>
+                                    <img alt='product-img' src={product.product_img} />
+                                    <div id='content-product'>
+                                        <div id='product-title'>{product.product_name}</div>
+                                        <div id='product-price'>đ {product.product_price}</div>
+                                    </div>
+                                </div>
+                            )
+                        }
 
-                        </div>
+
                     </div>
                 </div>
 
@@ -139,3 +148,216 @@ function HomeContainer(props) {
 }
 
 export default HomeContainer;
+
+const productList = [
+    {
+        product_id: 1,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 2,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1661409679/hloczn5kkh9jb9hu5ncm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 3,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 4,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 5,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 6,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 7,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 7,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 1,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 2,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1661409679/hloczn5kkh9jb9hu5ncm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 3,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 4,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 5,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 6,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 7,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 7,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 1,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 2,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1661409679/hloczn5kkh9jb9hu5ncm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 3,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 4,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 5,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 6,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 7,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 7,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 1,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 2,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1661409679/hloczn5kkh9jb9hu5ncm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 3,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 4,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 5,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+    {
+        product_id: 6,
+        product_name: "Áo phông tay lỡ nam nữ Unisex TS02,Áo thun Form rộng basic Oversize cổ tròn chất cotton style Hàn Quốc",
+        product_img: "https://res.cloudinary.com/sport-store/image/upload/v1660537701/t%E1%BA%A3i_xu%E1%BB%91ng10_idqdbm.jpg",
+        product_price: 25000,
+        product_sale: 50
+    },
+];

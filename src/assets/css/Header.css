@@ -1,16 +1,108 @@
-.header-container{
-    margin-top: 0px;
-    height: 120px;
+.header-container {
+    width: 100%;
+    height: max-content;
     background: linear-gradient(#f6412d, #ff6433);
-    display: flex;
-    direction: ltr;
+    box-shadow: 3px 5px 5px rgb(173, 178, 184);
+    position: sticky;
+    top: 0px;
 }
 
-.wrapper-header{
+.wrapper-user {
     margin: 0 18%;
+    color: #ffffff;
+    font-size: small;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    align-items: center;
 }
 
-#logo{
+.icon-notifi {
+    margin-right: 25px;
+    display: flex;
+}
+
+.icon-notifi img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.icon-signup {
+    margin-right: 5px;
+}
+
+.icon-login {
+    margin-left: 5px;
+}
+
+.wrapper-header {
+    margin: 0 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
     height: 84px;
-    width: 120px;
+}
+
+.search-bar {
+    width: 70%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 0px;
+    align-items: center;
+}
+
+#form {
+    margin-right: 10px;
+    width: 90%;
+}
+
+#input-search {
+    padding: 10px;
+    border: 1px solid #e3e3e3;
+    width: 97%;
+}
+
+#btn-search {
+    background: linear-gradient(#f6412d, #ff6433);
+    border: 1px solid #e3e3e3;
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#btn-search img {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+
+.cart-account {
+    height: 35px;
+    width: 100px;
+}
+
+.card {
+    display: flex;
+}
+
+.card img {
+    height: 30px;
+    width: 30px;
+}
+
+#icon-badge {
+    background-color: #ffffff;
+    color: #ff0000;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    right: 14px;
+    top: -3px;
 }

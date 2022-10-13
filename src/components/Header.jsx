@@ -1,22 +1,44 @@
 import React from 'react';
-import '../assets/css/Header.css'
-// import logo from '../assets/images/logo.jpg'
+import '../assets/css/header.css'
 
 function Header(props) {
     return (
         <div className='header-container'>
-            <div className='wrapper-header'>
-                <div><img id='logo' alt='logo' src='https://res.cloudinary.com/sport-store/image/upload/v1660537700/t%E1%BA%A3i_xu%E1%BB%91ng1_ccsvrc.jpg' /></div>
-                <div className='wrapper-input-search'>
-                    <form>
-                        <input type="text" />
-                        <button />
-                    </form>
 
+            <div className='wrapper-user'>
+                <div className='icon-notifi'>
+                    <img alt="" src={require("../assets/images/icon-notification.png")} />
+                    <div>Notifications</div>
                 </div>
-                <div>
-                    <div>cart</div>
-                    <div>Login | Sign Up</div>
+                <div className='icon-notifi'>
+                    <div className='icon-signup'>Sign Up</div>
+                    <div> | </div>
+                    <div className='icon-login'>Login</div>
+                </div>
+            </div>
+
+            <div className='wrapper-header'>
+
+                <div className='logo'>
+                    <img alt='visa' src={require("../assets/images/logo.png")} />
+                </div>
+
+                <div className='search-bar'>
+                    <div id='form'>
+                        <form>
+                            <input id='input-search' type="text" placeholder='Search item...' />
+                        </form>
+                    </div>
+                    <button id='btn-search'>
+                        <img alt="icon-cart" src={require("../assets/images/icon-search.png")} />
+                    </button>
+                </div>
+
+                <div className='cart-account'>
+                    <div className='card'>
+                        <img alt="icon-cart" src={require("../assets/images/icon-cart.png")} />
+                        <div id='icon-badge'>4</div>
+                    </div>
                 </div>
             </div>
 

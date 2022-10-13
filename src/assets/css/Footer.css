@@ -1,25 +1,25 @@
-.footer-container{
-    margin:0 18%;
+.footer-container {
+    margin: 0 18%;
     margin-top: 20px;
     padding: 5px;
 }
 
-.footer-wrapper-content{
+.footer-wrapper-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-items: center;
 }
 
-.title-text{
+.title-text {
     font-weight: bold;
     font-size: small;
 }
 
-.padding-text{
+.padding-text {
     padding-left: 0px;
 }
 
-.grid-auto-flow-row{
+.grid-auto-flow-row {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -29,12 +29,12 @@ ul {
     list-style: none;
 }
 
-ul > li {
+ul>li {
     font-weight: lighter;
     margin-right: 5px;
 }
 
-li > img{
+li>img {
     height: 20px;
     width: 50px;
     margin-right: 5px;
@@ -44,18 +44,18 @@ li > img{
     object-fit: contain;
 }
 
-.media{
+.media {
     height: 20px;
     width: 50px;
     object-fit: contain;
 }
 
-.download{
+.download {
     height: 35px;
     object-fit: contain;
 }
 
-#copyright{
+#copyright {
     text-align: center;
     margin-top: 10px;
     padding-top: 20px;

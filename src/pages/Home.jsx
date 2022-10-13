@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import '../assets/css/Home.css'
+import '../assets/css/home.css'
 import HomeContainer from '../components/HomeContainer';
 
 function Home(props) {
