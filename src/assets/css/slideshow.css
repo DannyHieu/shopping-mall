@@ -1,0 +1,9 @@
+#main-container {
+    display: flex;
+    height: 390px;
+    background-color: aquamarine;
+}
+
+.wrapper-slideshow {
+    height: 370px;
+}
