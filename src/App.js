@@ -1,13 +1,24 @@
-import Home from './pages/Home';
-import Category from './pages/Category';
-import ProductDetail from './pages/ProductDetail';
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      {/* <Home />
-      <Category /> */}
-      <ProductDetail />
+      <div className='app-header'>
+        <Header />
+      </div>
+
+      <div className='app-container'>
+        <Outlet />
+      </div>
+
+      <div id='line' />
+
+      <div className='app-footer'>
+        <Footer />
+      </div>
+
     </div>
   );
 }

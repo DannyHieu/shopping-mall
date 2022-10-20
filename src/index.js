@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+import HomeContainer from './components/HomeContainer';
+import CategoryContainer from './components/CategoryContainer';
+import ProductDetailContainer from './components/ProductDetailContainer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />}>
+          <Route path='detail' element={<ProductDetailContainer />} />
+          <Route path='category' element={<CategoryContainer />} />
+          <Route index element={<HomeContainer />} />
+        </Route>
+      </Routes>
+
+    </BrowserRouter>
   </React.StrictMode>
 );
 

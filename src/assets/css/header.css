@@ -3,8 +3,7 @@
     height: max-content;
     background: linear-gradient(#f6412d, #ff6433);
     box-shadow: 3px 5px 5px rgb(173, 178, 184);
-    position: sticky;
-    top: 0px;
+
 }
 
 .wrapper-user {

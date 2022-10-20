@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/productdetailcontainer.css'
 
-function ProductDetailContainer(props) {
+const ProductDetailContainer = (props) => {
     return (
         <div className='main-container'>
             <div className='wrapper-container'>
