@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomeContainer from './components/HomeContainer';
 import CategoryContainer from './components/CategoryContainer';
 import ProductDetailContainer from './components/ProductDetailContainer';
+import NotFoundPage from './components/ProductDetailContainer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
           <Route path='category' element={<CategoryContainer />} />
           <Route index element={<HomeContainer />} />
         </Route>
+        <Route path='*' element={<NotFoundPage/>} />
       </Routes>
 
     </BrowserRouter>
